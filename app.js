@@ -18,3 +18,7 @@ app.get('/get_news',(req,res)=>{
     })
     .catch((e)=>console.log(e));
 });
+
+app.get('/',(req,res)=>{
+    res.send("Server is healthy")
+});
